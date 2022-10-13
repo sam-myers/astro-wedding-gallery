@@ -1,12 +1,13 @@
 ---
-import {Image} from "@astrojs/image/components";
-
-const { href, title, description } = Astro.props;
+const { href, title, width, description, crop } = Astro.props;
+const imgWidth = width || 1200;
+const resize = crop ? 'smartcrop' : 'fit';
+const thumbHref = `${href}?nf_resize=${resize}&w=${width}`;
 ---
 
 <article class="thumb">
   <a class="image" href={href} >
-    <Image src={href} width="1200" aspectRatio="4:3" format="webp" alt="" />
+    <img src={thumbHref} alt={title} width={imgWidth} />
   </a>
   <h2>{title}</h2>
   <p>{description}</p>

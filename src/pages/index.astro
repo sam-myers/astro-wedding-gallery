@@ -3,10 +3,8 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Thumb from "../components/Thumb.astro";
 
-const images = await Astro.glob("../images/*.*");
-
-let title = "Multiverse by HTML5 UP";
-let description = "Say hello to Multiverse, a slick, one-page gallery design with a fully functional lightbox.";
+let title = "Sam & Leah Wedding";
+let description = "Sam & Leah's Wedding Photos";
 ---
 
 <!DOCTYPE html>
@@ -24,28 +22,31 @@ let description = "Say hello to Multiverse, a slick, one-page gallery design wit
 
   <body class="is-preload">
     <div id="wrapper">
-      <Header title="Multiverse" />
+      <Header title={title} />
 
       <div id="main">
-        {images.map((img)=>(
-            <Thumb
-              title="Diam tempus accumsan"
-              href={img.default.src}
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            />
-          ))
-        }
+        <Thumb
+            title="Sam's Socks"
+            description='They say "Groom"'
+            href="/images/prep/sam-socks.jpg"
+        />
+        <Thumb
+            title="Nathan Getting Ready"
+            href="/images/prep/nathan-cuffs.jpg"
+            crop=true
+        />
+        <Thumb
+            title="Sam's Cufflinks"
+            description="In Leah's handwriting"
+            href="/images/prep/sam-cufflinks.jpg"
+        />
       </div>
 
       <Footer
-        title="Multiverse"
-        description="Just another fine responsive site template by HTML5 UP"
-        tiwtter="#"
-        facebook="#"
-        instagram="#"
-        github="#"
-        dribbble="#"
-        linkedin="#"
+        title="Sam & Leah Wedding, Sept 17 2022"
+        description="A thank you to our friends and family for being a part of our special day."
+        github="https://github.com/sam-myers/"
+        linkedin="https://www.linkedin.com/in/samuelrogermyers/"
       />
     </div>
 
