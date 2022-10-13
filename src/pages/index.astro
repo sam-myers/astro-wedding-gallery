@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Thumb from "../components/Thumb.astro";
+import Masthead from "../components/Masthead.astro";
 
 let title = "Sam & Leah Wedding";
 let description = "Sam & Leah's Wedding Photos";
@@ -25,6 +26,12 @@ let description = "Sam & Leah's Wedding Photos";
       <Header title={title} />
 
       <div id="main">
+
+        <Masthead
+            title="Preparation"
+            href="/images/prep/masthead.jpg"
+        />
+
         <Thumb
             title="Sam's Socks"
             description='They say "Groom"'
@@ -88,13 +95,27 @@ let description = "Sam & Leah's Wedding Photos";
             description="This is a great photo of Jeff"
             href="/images/prep/leah-fatherly-love.jpg"
         />
+        <Thumb
+            title="Sam's Letter to Leah"
+            description="I made a custom card"
+            href="/images/prep/leah-letter.jpg"
+        />
+        <Thumb
+            title="Leah's Letter to Sam"
+            description="Less embarrassing than custom vows"
+            href="/images/prep/sam-letter.jpg"
+        />
+
+        <Masthead
+            title="The Ceremony"
+            href="/images/ceremony/masthead.jpg"
+        />
+
       </div>
 
       <Footer
         title="Sam & Leah Wedding, Sept 17 2022"
         description="A thank you to our friends and family for being a part of our special day."
-        github="https://github.com/sam-myers/"
-        linkedin="https://www.linkedin.com/in/samuelrogermyers/"
       />
     </div>
 

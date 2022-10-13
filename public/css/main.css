@@ -1733,6 +1733,21 @@ body.is-preload #header {
 	position: relative;
 }
 
+/* Sam's edits */
+.masthead {
+	max-width: 100%;
+	max-height: 100%;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.masthead>h2 {
+	bottom: -0.75em !important;
+	font-size: 2.9em !important;
+	left: -0.3em !important;
+	margin: 1em !important;
+}
+
 #main .thumb:after {
 	background-image: -moz-linear-gradient(to top, rgba(10, 17, 25, 0.35) 5%, rgba(10, 17, 25, 0) 35%);
 	background-image: -webkit-linear-gradient(to top, rgba(10, 17, 25, 0.35) 5%, rgba(10, 17, 25, 0) 35%);
