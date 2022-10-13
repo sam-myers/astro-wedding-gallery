@@ -105,3 +105,6 @@ dist
 
 # Local Netlify folder
 .netlify
+
+# IntelliJ IDEA
+.idea
