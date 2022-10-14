@@ -1,10 +1,10 @@
 ---
-const { href, title } = Astro.props;
+const { href, title, thumbHref } = Astro.props;
 ---
 
 <article class="masthead thumb">
   <a class="image" href={href} >
-    <img src={href} alt={title} />
+    <img src={thumbHref ? thumbHref : href} alt={title} />
   </a>
   <h2>{title}</h2>
 </article>
