@@ -1,7 +1,7 @@
 ---
 const { href, title, description, crop } = Astro.props;
-const width = 1200;
-const height = 800;
+const width = 450;
+const height = 300;
 const resize = crop ? 'smartcrop' : 'fit';
 const thumbHref = `${href}?nf_resize=${resize}&w=${width}&h=${height}`;
 ---
