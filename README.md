@@ -1,8 +1,6 @@
-# Astro Multiverse
+# Sam & Leah Wedding Gallery
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8592e823-a037-4c80-9b5e-2888370c76a8/deploy-status)](https://app.netlify.com/sites/astro-multiverse/deploys)
-
-Say hello to **Multiverse**, a slick, one-page gallery design with a fully functional lightbox.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cf5a44bd-8111-42f7-a319-35161c5a1274/deploy-status)](https://app.netlify.com/sites/sam-leah-wedding/deploys)
 
 ## Commands
 
@@ -10,16 +8,12 @@ All commands are run from the root of the project, from a terminal:
 
 | Command       | Action                                       |
 | :------------ | :------------------------------------------- |
-| `npm install` | Installs dependencies                        |
-| `npm dev`     | Starts local dev server at `localhost:3000`  |
-| `npm build`   | Build your production site to `./dist/`      |
-| `npm preview` | Preview your build locally, before deploying |
+| `yarn`        | Installs dependencies                        |
+| `netlify dev` | Starts local dev server at `localhost:8888`  |
 
-## How it works
+## Large File Storage
 
-### Thumb
-
-Replace your images in `src/images`.
+Follow [Netlify's Large Media setup steps](https://docs.netlify.com/large-media/setup/). Without it, local dev servers will not be able to find the images.
 
 ## License
 
@@ -27,7 +21,7 @@ Replace your images in `src/images`.
 
 ## Credits
 
-- Demo images by [Unsplash](https://unsplash.com)
+- [Astro Multiverse](https://github.com/AREA44/astro-multiverse) by [Nguyen Long Nhat](https://github.com/torn4dom4n)
 - Icons by [Font Awesome](https://fontawesome.io)
 - [jQuery](https://jquery.com)
 - [Poptrox](https://github.com/ajlkn/jquery.poptrox)
